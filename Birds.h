@@ -16,8 +16,9 @@ public:
 
 	Birds(ifstream& in_file) : Animal(in_file) {
 		// Read the Fish-specific properties
+
+		
 		in_file >> m_incubationTime;
-		in_file.ignore();
 	}
 	virtual ~Birds() {};
 

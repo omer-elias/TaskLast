@@ -29,6 +29,8 @@ public:
 
 	Fish(ifstream& in_file) : Animal(in_file) {
 		// Read the Fish-specific properties
+
+
 		in_file >> m_finCount;
 		in_file >> m_gillsCount;
 		in_file.ignore();

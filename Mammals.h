@@ -27,6 +27,18 @@ public:
 	}
 
 	Mammals(ifstream& in_file) : Animal(in_file) {
+		char color[100];
+		in_file >> color;
+		SetColor(color);
+
+		int childCount;
+		in_file >> childCount;
+		SetChildCount(childCount);
+
+		float avgLifetime;
+		in_file >> avgLifetime;
+		SetavgLifeTime(avgLifetime);
+
 		// Read the Mammals properties
 		in_file >> m_pregnancyTime;
 		in_file >> m_milkLiters;

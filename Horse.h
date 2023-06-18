@@ -100,6 +100,10 @@ public:
         char type[100];
         in_file >> type;
         SetType(type);
+
+        char end[100];
+        in_file >> end;
+
     }
 
 

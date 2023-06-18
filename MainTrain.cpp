@@ -100,7 +100,6 @@ int main()
 		cout << "AddAnimal is wrong (-10)" << endl;
 
 		Mermaid* m = dynamic_cast<Mermaid*>( z4.GetAnimals()[1] );
-		cout << m->GetLastName() << endl;
 	if( 0 != strcmp( m->GetLastName(), "Princess" ) )
 		cout << "Zoo name is wrong after loading from text file (-10)" << endl;
 
@@ -110,23 +109,23 @@ int main()
 	if( 5.5f != z5.GetAnimals()[0]->GetLifetime() )
 		cout << "loading animals is wrong from text file (-10)" << endl;
 
-	////part 3
-	//if( 0 != strcmp( z3.GetName(), "Hi Kef" ) )
-	//	cout << "Zoo name is wrong after merging 2 zoos (-10)" << endl;
+	//part 3
+	if( 0 != strcmp( z3.GetName(), "Hi Kef" ) )
+		cout << "Zoo name is wrong after merging 2 zoos (-10)" << endl;
 
-	//if( 4 != z3.GetNumOfAnimals() )
-	//	cout << "Zoo number of animals is wrong after merging 2 zoos (-10)" << endl;
+	if( 4 != z3.GetNumOfAnimals() )
+		cout << "Zoo number of animals is wrong after merging 2 zoos (-10)" << endl;
 
-	//Flamingo* f2 = dynamic_cast<Flamingo*>( z3.GetAnimals()[0] );
-	//if( NULL == f2 )
-	//	cout << "Zoo animals order is wrong after merging 2 zoos (-10)" << endl;
+	Flamingo* f2 = dynamic_cast<Flamingo*>( z3.GetAnimals()[0] );
+	if( NULL == f2 )
+		cout << "Zoo animals order is wrong after merging 2 zoos (-10)" << endl;
 
-	//if( 0 != strcmp( z6.GetOpenHour(), "9:00" ) )
-	//	cout << "Zoo open hour is wrong after loading form bin file (-10)" << endl;
+	if( 0 != strcmp( z6.GetOpenHour(), "9:00" ) )
+		cout << "Zoo open hour is wrong after loading form bin file (-10)" << endl;
 
-	//Horse* h2 = dynamic_cast<Horse*>( z3.GetAnimals()[1] );
-	//if( NULL == h2 )
-	//	cout << "Zoo animals order is wrong after loading from bin file (-10)" << endl;
+	Horse* h2 = dynamic_cast<Horse*>( z3.GetAnimals()[1] );
+	if( NULL == h2 )
+		cout << "Zoo animals order is wrong after loading from bin file (-10)" << endl;
 
 	//finished
 	cout << "done" << endl;
